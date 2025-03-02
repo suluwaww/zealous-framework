@@ -1,0 +1,105 @@
+/* Негізгі контейнер */
+.player-container {
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок */
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Басқару контейнері */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+/* Басқару батырмалары */
+button {
+  padding: 12px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff7b54;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff5722;
+}
+
+/* Дыбыс деңгейін реттегіш */
+input[type="range"] {
+  width: 120px;
+  cursor: pointer;
+  accent-color: #ff7b54;
+}
+
+/* Ойнату жылдамдығы */
+select {
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+  border: none;
+}
+
+/* Ағымдағы трек */
+h3 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #ffcc29;
+  font-weight: bold;
+}
+
+/* Трек сипаттамасы */
+p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+/* Плейлист */
+.playlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.playlist li {
+  padding: 12px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  margin-bottom: 6px;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.playlist li:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.playlist .active {
+  background: #ffcc29;
+  color: black;
+  font-weight: bold;
+}
